@@ -17,4 +17,7 @@ public class AdvertisementEntity {
     private String floor;
     private String series;
     private String price;
+    private String type;
+    private String city;
+    private String district;
 }
