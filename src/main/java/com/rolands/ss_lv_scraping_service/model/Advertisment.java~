@@ -1,0 +1,15 @@
+package com.rolands.ss_lv_scraping_service.model;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class Advertisment {
+    String street;
+    String roomCount;
+    String area;
+    String floor;
+    String type;
+    String price;
+}

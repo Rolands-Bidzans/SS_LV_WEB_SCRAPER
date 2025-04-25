@@ -4,7 +4,7 @@ spring:
   application: name=ss-lv-scraping-service
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect # Specify dialect for hibernate and Spring Boot JPA should use to connect
-#    show-sql: true # print queries that are executed to console
+    show-sql: true # print queries that are executed to console
     hibernate:
       ddl-auto: update # do not delete tables and columns but add in addition, not used for H2 Database(always new)
   datasource:
