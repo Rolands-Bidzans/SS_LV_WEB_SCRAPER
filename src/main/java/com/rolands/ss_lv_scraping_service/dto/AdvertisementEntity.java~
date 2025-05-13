@@ -15,23 +15,11 @@ public class AdvertisementEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "advertisement_id")
     private UUID advertisementId;
-
-    @Column(name = "advertisement_posting_date", nullable = false)
+    private UUID apartmentId;
     private LocalDateTime advertisementPostingDate;
-
-    @Column(name = "advertisement_removing_date")
     private LocalDateTime advertisementRemovingDate;
-
-    @Column(name = "price", nullable = false)
     private double price;
-
-    @Column(name = "period", nullable = false)
     private String period;
-
-    @Column(name = "transactionType", nullable = false)
     private String transactionType;
 
-    @ManyToOne
-    @JoinColumn(name = "apartment_id", nullable = false)
-    private ApartmentEntity apartment;
 }

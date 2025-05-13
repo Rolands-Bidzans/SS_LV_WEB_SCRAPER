@@ -1,0 +1,7 @@
+package com.rolands.ss_lv_scraping_service.repositories;
+
+import com.rolands.ss_lv_scraping_service.model.CityEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DistrictEntity extends JpaRepository<DistrictEntity, Long> {
+}

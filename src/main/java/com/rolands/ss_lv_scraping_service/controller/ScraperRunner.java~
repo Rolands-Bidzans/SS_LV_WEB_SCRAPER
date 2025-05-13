@@ -45,7 +45,7 @@ public class ScraperRunner implements CommandLineRunner {
         String url = "https://www.ss.lv/lv/real-estate/flats/gulbene-and-reg/";
 
         try {
-//            iScraperService.fetchPage();
+            iScraperService.fetchPage();
 
 
         } catch (Exception e) {

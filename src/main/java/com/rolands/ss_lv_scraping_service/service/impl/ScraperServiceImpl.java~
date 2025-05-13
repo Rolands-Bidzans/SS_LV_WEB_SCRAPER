@@ -57,6 +57,7 @@ public class ScraperServiceImpl implements IScraperService {
                 if(optionalRealEstateTypeEntity.isPresent()) {
                     realEstateType = optionalRealEstateTypeEntity.get();
                 } else {
+                    logger.info("Tiku te");
                     realEstateType = new RealEstateTypeEntity();
                     realEstateType.setRealEstateTypeName(endpointTitles.get(i));
                     realEstateType = realEstateTypeRepository.save(realEstateType);

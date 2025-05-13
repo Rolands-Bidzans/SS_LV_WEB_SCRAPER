@@ -28,7 +28,6 @@ public class AdvertisementEntity {
     @Column(name = "period", nullable = false)
     private String period;
 
-    @Column(name = "transactionType", nullable = false)
     private String transactionType;
 
     @ManyToOne
